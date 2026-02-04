@@ -9,6 +9,7 @@ O schema é composto por:
 - Flags de descarte
 - Metadados de controle e execução
 
+---
 
 ## 🧾 1. Identificação e Dados Pessoais
 
@@ -64,4 +65,64 @@ O schema é composto por:
 | Fonte | Texto | Fonte original do lead |
 | Fonte Limpa | Texto | Fonte padronizada |
 | Codigo Fonte | Texto | Código identificador da fonte |
-| Fla
+| Flag Cvortex | Booleano | Indica origem via Cvortex |
+
+---
+
+## 🧾 5. Indicação
+
+| Coluna | Tipo | Descrição |
+|------|------|-----------|
+| Matricula Indicador | Texto | Matrícula do indicador |
+| Matricula Indicador Limpo | Texto | Matrícula do indicador tratada |
+| Nome Indicador | Texto | Nome do indicador |
+| Nome Indicador Limpo | Texto | Nome do indicador padronizado |
+
+---
+
+## ⏱️ 6. Datas e Metadados de Execução
+
+| Coluna | Tipo | Descrição |
+|------|------|-----------|
+| Data Captacao | Data | Data de captação do lead |
+| Datetime de Execução | Data/Hora | Momento da execução do pipeline |
+| Data do Exame | Data | Data do exame admissional |
+| Planilha | Texto | Nome da planilha de origem |
+
+---
+
+## 🔢 7. Controles e Contagens
+
+| Coluna | Tipo | Descrição |
+|------|------|-----------|
+| Contagem CPF | Número | Quantidade de ocorrências do CPF |
+| Contagem Telefone | Número | Quantidade de ocorrências do telefone |
+
+---
+
+## 🚫 8. Flags de Descarte
+
+Estas colunas indicam se o lead deve ser descartado com base em regras de negócio.
+
+| Coluna | Tipo | Descrição |
+|------|------|-----------|
+| Descarte Cidade | Booleano | Cidade fora do escopo |
+| Descarte Telefone Invalido | Booleano | Telefone inválido |
+| Descarte Contagem CPF | Booleano | CPF duplicado |
+| Descarte Contagem Telefone | Booleano | Telefone duplicado |
+| Descarte Idade | Booleano | Idade fora do permitido |
+| Descarte Escolaridade | Booleano | Escolaridade incompatível |
+| Descarte Atendimento Ativo | Booleano | Lead com atendimento ativo |
+| Descarte Sucesso 30 Dias | Booleano | Sucesso recente (30 dias) |
+| Descarte 7 Dias | Booleano | Reprocessamento em menos de 7 dias |
+
+---
+
+## 📌 Observações Gerais
+
+- As colunas **RAW** são preservadas para rastreabilidade
+- As colunas **LIMPAS** são utilizadas para análise e regras
+- O Power BI consome prioritariamente os campos limpos
+- As flags permitem análises detalhadas de descarte sem perda de histórico
+
+Este schema pode evoluir conforme novas regras e fontes forem adicionadas ao pipeline.
