@@ -33,14 +33,19 @@ Para utilizar este módulo, é necessário extrair todas as fontes de mailing di
 
 Para rodar este módulo, basta abrir o arquivo run. Ao executá-lo, você será solicitado a informar alguns dados para a geração das planilhas, sendo eles, em ordem:
 
-## Módulo a executar: Insira o número 1 para a limpeza.
+## Módulo a executar: 
+Insira o número 1 para a limpeza.
 
-## Modo de debug: Insira v para rodar em modo de debug. Para o modo normal, basta pressionar Enter.
+## Modo de debug: 
+Insira v para rodar em modo de debug. Para o modo normal, basta pressionar Enter.
 
-## Prefixo dos arquivos: Por padrão, o prefixo no nome dos arquivos é o turno de execução (basta pressionar Enter). Caso queira, é possível definir outro prefixo para execuções separadas. Cada prefixo gera um registro. Caso execute com um prefixo já existente, será questionado se deseja sobrescrever a última execução, podendo seguir em frente ou cancelar o processo.
+## Prefixo dos arquivos: 
+Por padrão, o prefixo no nome dos arquivos é o turno de execução (basta pressionar Enter). Caso queira, é possível definir outro prefixo para execuções separadas. Cada prefixo gera um registro. Caso execute com um prefixo já existente, será questionado se deseja sobrescrever a última execução, podendo seguir em frente ou cancelar o processo.
 
-## Salvamento no banco de dados: Após algumas etapas de processamento, será perguntado se deseja salvar o histórico no banco de dados de People Analytics (atualmente este processo está apenas em planejamento, pois a área de People Analytics não dispõe de um servidor próprio para criação de um banco de dados).
+## Salvamento no banco de dados: 
+Após algumas etapas de processamento, será perguntado se deseja salvar o histórico no banco de dados de People Analytics (atualmente este processo está apenas em planejamento, pois a área de People Analytics não dispõe de um servidor próprio para criação de um banco de dados).
 
-## Definição da quantidade de arquivos gerados para importação: Como etapa final, é exibido um script solicitando a entrada do usuário com a quantidade de arquivos para importação que deseja gerar por cidade, conforme configurado em config.py.
+## Definição da quantidade de arquivos gerados para importação: 
+Como etapa final, é exibido um script solicitando a entrada do usuário com a quantidade de arquivos para importação que deseja gerar por cidade, conforme configurado em config.py.
 
 Pronto. Com a execução ocorrendo normalmente, os arquivos finais serão gerados nas respectivas pastas.
