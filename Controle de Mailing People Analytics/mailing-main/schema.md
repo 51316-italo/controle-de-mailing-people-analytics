@@ -9,7 +9,6 @@ O schema é composto por:
 - Flags de descarte
 - Metadados de controle e execução
 
----
 
 ## 🧾 1. Identificação e Dados Pessoais
 
